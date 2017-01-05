@@ -1,6 +1,6 @@
 $(function() {
 
-	// FULL HEIGHT
+	// HEIGHT
 
 	var fullHeight = $(window).height();
 
@@ -18,93 +18,26 @@ $(function() {
 
 	});
 
-	// HALF HEIGHT
-
-	var halfHeight = $(window).height() / 2;
-
-	$('.half').css({'height': halfHeight + 'px'});
-
-	$(window).resize(function() {
-
-		if (!resize) {
-			resize = true;
-			(!window.requestAnimationFrame) ? setTimeout(init, 300) : window.requestAnimationFrame(init);
-		}
-
-		var halfHeight = $(window).height() / 2;
-
-		$('.half').css({'height': halfHeight + 'px'});
-
-		$('').css({'line-height': halfHeight + 'px'});
-
-	});
-
 	// NAVBAR
 
-	$('.js-trigger').on('click', function() {
+    $(".hamburger").click(function(){
 
-		$('.js-icon').toggleClass('is-clicked');
+        $("#navbar-content").fadeToggle(200);
 
-		// $('.js-header').toggleClass('menu-is-open');
+        $(this).toggleClass('btn-open').toggleClass('btn-close');
+        
+        $('body').toggleClass('noscroll');
 
-		if ($('.js-nav').hasClass('is-visible')) {
-			event.preventDefault();
-			transitionLayer.addClass('closing');
-			transitionBackground.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
-				transitionLayer.removeClass('closing opening visible');
-				transitionBackground.off('webkitAnimationEnd oanimationend msAnimationEnd animationend');
-			});
+    });
 
-			$('.js-nav').removeClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
+    $('#navbar-content').on('click', function(){
 
-				$('body').removeClass('overflow-hidden');
+        $("#navbar-content").fadeToggle(200);
 
-			});
+        $(".hamburger").toggleClass('btn-open').toggleClass('btn-close');
 
-		} else {
-			event.preventDefault();
-			transitionLayer.addClass('visible opening');
-			var delay = ( $('.no-cssanimations').length > 0 ) ? 0 : 250;
-			setTimeout(function() {
-				$('.js-nav').addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
+        open = false;
 
-					$('body').addClass('overflow-hidden');
-				});
-			}, delay);
-
-		}
-
-	});
-
-	// TRANSITION
-
-	var transitionLayer = $('.cd-transition-layer');
-	var transitionBackground = transitionLayer.children();
-
-	var frameProportion = 1.78;
-	var frames = 25;
-	var resize = false;
-
-	function init() {
-		var windowWidth = $(window).width(),
-			windowHeight = $(window).height(),
-			unitHeight, unitWidth;
-
-		if (windowWidth / windowHeight > frameProportion) {
-			unitWidth = windowWidth;
-			unitHeight = unitWidth / frameProportion;
-		} else {
-			unitHeight = windowHeight * 1.2;
-			unitWidth = unitHeight * frameProportion;
-		}
-
-		transitionBackground.css({
-			'width': unitWidth * frames + 'px',
-			'height': unitHeight + 'px'
-		});
-		resize = false;
-	}
-
-	init();
+    });
 
 });

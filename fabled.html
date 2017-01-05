@@ -19,7 +19,7 @@
 	<link rel="icon" href="favicon.ico">
 
 </head>
-<body class="">
+<body>
 
 	<!-- NAVBAR -->
     
@@ -42,7 +42,8 @@
 
 	<!-- VIDEO -->
 
-	<div id="video"></div>
+  <div id="background-video" class="background-video">
+  </div>
 
 	<!-- HEADER -->
 
@@ -113,39 +114,26 @@
 
 	<!-- FOOTER -->
 
-    <footer id="footer-content">
-
-		<div id="footer">
-			<div id="social">
-				<ul>
-					<li><a href="https://instagram.com/mrdicre" class="icon-instagram" target="_blank"></a></li>
-					<li><a href="https://uk.linkedin.com/in/mrdicre" class="icon-linkedin" target="_blank"></a></li>
-					<li><a href="mailto:stefano.dicre@gmail.com" class="icon-airplane" target="_blank"></a></li>					
-				</ul>
-			</div>
-			<div class="clear"></div>
-		</div>
-
-	</footer>
-
 	<!-- SCRIPT -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-
+    
 	<script src="js/youtubebackground.js"></script>
 	<script src="js/main.js"></script>
 
-	<!-- VIDEO
+	<!-- VIDEO -->
 
 	<script>
-		$('#video').YTPlayer({
-			mute: true,
-			repeat: true,
-			fitToBackground: true,
-			videoId: 'TR9Z3OJ0HQk'
-		});
-	</script>-->
+      $('#background-video').YTPlayer({
+        fitToBackground: true,
+        videoId: 'TR9Z3OJ0HQk',
+        pauseOnScroll: true,
+        callback: function() {
+          videoCallbackEvents();
+        }
+      });
+	</script>
 
 </body>
 </html>

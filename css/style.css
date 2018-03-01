@@ -207,14 +207,12 @@ h6 { font-size: 14px; }
 #logo h1 {
 	font-size: 1em;
     font-weight: 400;
-    font-style: italic;
     color: rgba(255,255,255,0.5);
     }
 
 #logo a {
 	font-size: 1em;
     font-weight: 400;
-    font-style: italic;
     color: rgba(255,255,255,0.5);
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -323,14 +321,11 @@ main { padding-top: 125px; }
 
 #quote-content {
     padding: 50px 0;
-    background: #F44336;
     text-align: center;
     }
 
 #quote-content quote {
-    font-size: 26px;
     color: #FFFFFF;
-    opacity: 0.6;
     margin: 100px 0;
     font-style: italic;
     font-weight: 200;
@@ -444,6 +439,7 @@ main { padding-top: 125px; }
 #slider-content {
     width: 100%;
     position: absolute;
+    height: 100%;
     }
 
 /* VIDEO */
@@ -469,6 +465,7 @@ main { padding-top: 125px; }
 #instafeed {
     width: 100%;
     z-index: -10;
+    height: 100%;
 	}
 
 .instagram {

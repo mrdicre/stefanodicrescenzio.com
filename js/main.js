@@ -1,23 +1,5 @@
 $(function() {
 
-	// HEIGHT
-
-	var fullHeight = $(window).height();
-
-	$('.full').css({'height': fullHeight + 'px'});
-
-	$('').css({'line-height': fullHeight + 'px'});
-
-	$(window).resize(function() {
-
-		var fullheight = $(window).height();
-
-		$('.full').css({'height': fullHeight + 'px'});
-
-		$('').css({'line-height': fullHeight + 'px'});
-
-	});
-
 	// NAVBAR
 
     $(".hamburger").click(function(){

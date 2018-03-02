@@ -43,11 +43,9 @@
 		</div>
 	</div>
 
-	<!-- BACKSTRETCH -->
-    
-    <div id="slider-content">
-        <div id="slider01" class="shadow" style="height:100%;"></div>
-    </div>
+	<!-- VIDEO -->
+
+    <div id="background-video"></div>
 
 	<!-- HEADER -->
 
@@ -78,14 +76,14 @@
 	<main>
 		<section id="intro-content" class="shadow">
 			<div id="intro" class="container">
-				<h1>Fosca Bertrán</h1>
-				<p class="last50">Portfolio made for Fosca Bertrán a spanish artist and designer. When I was a freelance I worked with Fosca Bertrán on the rearrangement of contents and on the creation of the e-commerce site in order to increase products value and sales.</p>
+				<h1>Booking.com</h1>
+				<p class="last50">Booking.com is one of the largest travel sites active today and has millions of users everyday. They are very user focused and a they have the largest user review database of all the travel sites.</p>
 			</div>
 		</section>
 		<section id="showcase-content">
 			<div id="showcase" class="container">
-				<div class="mockup browser" data-url="http://foscabertran.com">
-					<img class="screen" src="img/foscabertran/browser01.jpg">
+				<div class="mockup browser" data-url="http://booking.com">
+					<img class="screen" src="img/booking/browser01.jpg">
 				</div>
 			</div>
 		</section>
@@ -94,19 +92,16 @@
                 <div class="four columns">
 					<ul class="accordion last60">
                         <li>UX UI Design</li>
-						<li>Wireframing</li>
 					</ul>
 				</div>
                 <div class="four columns">
 					<ul class="accordion last60">
-                        <li>Front-End Development</li>
-						<li>jQuery Implementation</li>
+                        <li>Restyling</li>
 					</ul>
 				</div>
                 <div class="four columns">
 					<ul class="accordion last60">
-                        <li>Bigcartel Implementation</li>
-						<li>Photo Editing</li>
+						<li>Concept</li>
 					</ul>
 				</div>
             </div>
@@ -118,24 +113,24 @@
 			<div id="more" class="container">
 				<div class="four columns">
 					<div class="mockup mobile">
-						<img class="screen" src="img/foscabertran/mobile01.jpg">
+						<img class="screen" src="img/booking/mobile01.jpg">
 					</div>
 				</div>
 				<div class="four columns">
 					<div class="mockup mobile">
-						<img class="screen" src="img/foscabertran/mobile02.jpg">
+						<img class="screen" src="img/booking/mobile02.jpg">
 					</div>
 				</div>
 				<div class="four columns">
 					<div class="mockup mobile">
-						<img class="screen" src="img/foscabertran/mobile03.jpg">
+						<img class="screen" src="img/booking/mobile03.jpg">
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="quote-content" style="background:#009688;">
+		<section id="quote-content" style="background:#2196F3;">
 			<div id="quote" class="container">
-                <quote>"Estoy muy feliz con mi página web, es elegante, simple y muy efectiva! Eres un gran creativo que además entiende perfectamente las necesidades de cada uno, sabe escuchar y plasmar perfectamente tu idea, mejorandola. Ya es la segunda vez que recurro a él y no será la última."</quote>
+                <quote>"During this exercise I overlooked two important aspects, which are to not highlight the community and not emphasise the reviews. I preferred to focus more on the user experience and visual impact. From my point of view there are some elements that can be improved but I think also that is important to leave some areas in case of additional features."</quote>
             </div>
         </section>
 	</main>
@@ -145,7 +140,7 @@
 	<footer id="footer-content">
 	    <div id="footer" class="container">
 	    	<div class="six columns">
-	    		<a href="booking">Previous / Fosca</a>
+	    		<a href="fosca.html">Previous / Fosca</a>
 	    	</div>
 	    	<div class="six columns">
 	    		<a href="space">Next / Fetch</a>
@@ -158,24 +153,21 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     
-	<script src="js/backstretch.js"></script>
+	<script src="js/youtubebackground.js"></script>
 	<script src="js/main.js"></script>
 
-    <!-- BACKSTRETCH -->
-    
-    <script>
-        $("#slider01").backstretch([
-            "img/foscabertran/intro01.jpg",
-            "img/foscabertran/intro02.jpg",
-            "img/foscabertran/intro03.jpg",
-            "img/foscabertran/intro04.jpg",
-            "img/foscabertran/intro05.jpg",
-            "img/foscabertran/intro06.jpg"
-        ], {
-        fade: 750,
-        duration: 5000
-        });
-    </script>
+	<!-- VIDEO -->
+
+	<script>
+      $('#background-video').YTPlayer({
+        fitToBackground: true,
+        videoId: 'bZkLuCgORi4',
+        pauseOnScroll: true,
+        callback: function() {
+          videoCallbackEvents();
+        }
+      });
+	</script>
 
 </body>
 </html>

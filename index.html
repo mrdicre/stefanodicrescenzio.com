@@ -1,109 +1,53 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9"><![endif]-->
-<!--[if IE 9]><html class="no-js lt-ie10"><![endif]-->
-<!--[if gt IE 9]><!--><html class="no-js"><!--<![endif]-->
+<html lang="en">
+    
 <head>
 
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Stefano Di Crescenzio / UX Designer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<title>Stefano Di Crescenzio</title>
+    
 	<meta name="author" content="Stefano Di Crescenzio">
-	<meta name="description" content="I'm Stefano Di Crescenzio a UX Designer based in London. Here are showcased some of my work: websites, apps, graphics, and more...">
+	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	
-    <link rel="stylesheet" type="text/css" media="all" href="css/skeleton.css">
-	<link rel="stylesheet" type="text/css" media="all" href="css/mockup.css">
-	<link rel="stylesheet" type="text/css" media="all" href="css/style.css">
-    <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" type="text/css" media="all" href="https://fonts.googleapis.com/css?family=Prata">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     
 	<link rel="icon" href="favicon.ico">
 
+    <style>
+        body { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; font: 100%/1.5 'Roboto', Helvetica, Arial, sans-serif; background: #F5F5F5; }
+        ::-moz-selection { color: #000000; text-shadow: none; background: #00E676; }
+        ::selection { color: #000000; text-shadow: none; background: #00E676; }
+        .bg-album { background: url("img/album03.jpg") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; }
+        .tracked-ultra { letter-spacing: 1em; }
+        .shadow-bottom:before { top: 0; left: 0; right: 0; bottom: 0; content: ""; position: absolute; background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.8) 100%); background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(0,0,0,0.8) 100%); }
+    </style>
+    
 </head>
-<body class="noscroll">
-
-	<!-- NAVBAR -->
-    <!--
-	<div id="navbar-content">
-		<div id="navbar" class="container">
-			<ul>
-				<li><a href="foscabertran.html">Fosca Bertrán<span>Portfolio</span></a></li>
-                <li><a href="booking.html">Booking.com<span>Concept</span></a></li>
-                <li><a href="space">Space<span>App for managing Mobile Plans</span></a></li>
-				<li><a href="yummee">Yummee<span>Marketplace for support Charities</span></a></li>
-				<li><a href="habitat">Habitat<span>Learning Thermostat</span></a></li>
-				<li><a href="champions">Champions<span>Benchmarking Tool</span></a></li>
-				<li><a href="time">Time<span>Management Tool</span></a></li>
-				<li><a href="eye">Eye<span>App to collect Feedback</span></a></li>
-				<li><a href="frame">Frame<span>Things to do for kids and single parents</span></a></li>
-			</ul>
-		</div>
-	</div>
-    -->
-	<!-- INSTAFEED -->
-
-	<div id="instafeed" class="shadow fixed">
-		<div class="cd-transition-layer">
-			<div class="bg-layer"></div>
-		</div>
-	</div>
-
+<body>
+    
 	<!-- HEADER -->
 
-	<header id="header-content" class="js-header">
-		<div id="header" class="container">
-			<div id="logo" class="four columns">
-				<h1>Stefano Di Crescenzio</h1>
-			</div>
-			<div id="menu" class="four columns">
-				<div class="hamburger js-trigger js-icon cd-btn cd-modal-trigger">
-					<div class="top-bar"></div>
-					<div class="middle-bar"></div>
-					<div class="bottom-bar"></div>
-				</div>
-			</div>
-			<div id="" class="four columns">
-				<div id="social">
-					<ul>
-						<li><a href="https://instagram.com/mrdicre" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-						<li><a href="https://uk.linkedin.com/in/mrdicre" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</header>
+    <div class="bg-album w-100 top-0 vh-100 shadow-bottom" style="z-index: -10;">
+        <span class="w-100 db tc ttu tracked-ultra white f7 pv4 absolute bottom-0">User Experience / Design / Leadership / Strategy</span>
+    </div>
 
 	<!-- MAIN -->
 
-	<main></main>
-
+    <main></main>
+    
 	<!-- FOOTER -->
 
     <footer></footer>
-
+    
 	<!-- SCRIPT -->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-
-    <script src="js/instafeed.min.js"></script>
-	<script src="js/main.js"></script>
-
-	<!-- INSTAFEED -->
-
-	<script>
-	    var feed = new Instafeed({
-            get: 'user',
-			userId: 588557475,
-			resolution: 'standard_resolution',
-			accessToken: '588557475.1677ed0.7d27551b02fa433f91ba14a156074996',
-            sortBy: 'random',
-			template: '<div class="instagram cover absolute" style="background:url({{image}}) no-repeat center center"></div>'
-	    });
-	    feed.run();
-	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>    
     
 </body>
 </html>

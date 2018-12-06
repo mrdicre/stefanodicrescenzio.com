@@ -22,15 +22,12 @@
         body { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; font: 100%/1.5 'Roboto', Helvetica, Arial, sans-serif; background: #FFFFFF; }
         ::-moz-selection { color: #000000; text-shadow: none; background: #00E676; }
         ::selection { color: #000000; text-shadow: none; background: #00E676; }
-        .bg-album { background: url("img/album01.jpg") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; }
-        .bg-dark:before { top: 0; left: 0; right: 0; bottom: 0; content: ""; position: absolute; background: rgba(0,0,0,0.5); }
-        .shadow-bottom:before { top: 0; left: 0; right: 0; bottom: 0; content: ""; position: absolute; background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.8) 100%); background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(0,0,0,0.8) 100%); }
         .bets-hidden { visibility: hidden; }
     </style>
     
 </head>
-<body class="overflow-hidden">
-
+<body>
+    
 	<!-- BETS -->
     
 	<div class="bets top-0 w-100 h-100 bg-black o-90 fixed z-4 dn">
@@ -40,32 +37,43 @@
             <div><a href="ocado.html" class="f1 fw1 no-underline white">Ocado GM Platform</a></div>
         </div>
 	</div>
-    
+
 	<!-- HEADER -->
     
-    <header class="cf w-75 center fixed left-0 right-0 z-5 pv5">
+    <header class="cf w-80 center relative z-5 pv5">
         <div class="fl w-third tl">
-            <h1 class="f5 fw4 mv0 white">Stefano Di Crescenzio</h1>
+            <h1 class="f4 fw1 mv5 dn">Stefano Di Crescenzio</h1>
+            <a href="index.html" class="bets-light no-underline black">Back Home</a>
         </div>
         <div class="fl w-third tc">
-            <a href="#" class="bets-close bets-hidden"><i class="material-icons white">close</i></a>
+            <a href="#" class="bets-close bets-hidden"><i class=" material-icons white">close</i></a>
         </div>
         <div class="fl w-third tr">
-            <!--
-            <a href="#" class="bets-open no-underline white">Projects</a>
-            -->
+            <a href="#" class="bets-open bets-light no-underline black">Projects</a>
         </div>
     </header>
-
+    
 	<!-- MAIN -->
 
-    <main class="bg-album w-100 top-0 vh-100 shadow-bottom" style="z-index: -10;"></main>
+    <main style="">
+        <section class="w-75 center">
+            <img src="img/flatsix/flatsix01.jpg" alt="" class="">
+        </section>
+        
+        <section class="w-75 center">
+            <div class="w-50 center tc mv5">
+                <h3 class="f2 fw1 ma0">Flat Six</h3>
+                <h4 class="f4 fw4">Proud Owner</h4>
+                <p class="f4 fw1 gray lh-copy ma0">I designed and built my living room and kitchen. A modern social open space were people can enjoy few bits of italian cuisine.</p>
+            </div>
+            <img src="img/flatsix/flatsix02.jpg" alt="" class="">
+            <img src="img/flatsix/flatsix03.jpg" alt="" class="mv5">
+        </section>
+    </main>
     
 	<!-- FOOTER -->
 
-    <footer>
-        <span class="w-100 db tc ttu tracked-ultra white f7 pv4 absolute bottom-0" style="letter-spacing: 1em;">User Experience / Design / Leadership</span>
-    </footer>
+    <footer class="w-75 center fw1 gray tc pv5">&copy; 2018 Stefano Di Crescenzio. All rights reserved.</footer>
     
 	<!-- SCRIPT -->
 
@@ -79,6 +87,10 @@
     $(".bets-open, .bets-close").click(function(){
 
         $(".bets").fadeToggle(200);
+        
+        $('body').toggleClass('overflow-hidden');
+        
+        $('.bets-light').toggleClass('white');
         
         $('.bets-close').toggleClass('bets-hidden');
 

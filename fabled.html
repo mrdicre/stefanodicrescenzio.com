@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<title>Stefano Di Crescenzio</title>
+    
+	<meta name="author" content="Stefano Di Crescenzio">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+	<link rel="icon" href="favicon.ico">
+
+    <style>
+        body { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; font: 100%/1.5 'Roboto', Helvetica, Arial, sans-serif; background: #FFFFFF; }
+        ::-moz-selection { color: #000000; text-shadow: none; background: #00E676; }
+        ::selection { color: #000000; text-shadow: none; background: #00E676; }
+        .bets-hidden { visibility: hidden; }
+    </style>
+    
+</head>
+<body>
+
+	<!-- BETS -->
+    
+	<div class="bets top-0 w-100 h-100 bg-black o-90 fixed z-4 dn">
+        <div class="center tc mt6 w-90 w-75-l">
+            <span class="w-100 db tc ttu tracked-ultra green f7 pv4" style="letter-spacing: 1em;">BETS</span>
+            <div><a href="zoom.html" class="f2 f1-l fw1 no-underline white hover-green">Ocado Zoom</a></div>
+            <div><a href="fabled.html" class="f2 f1-l fw1 no-underline white hover-green">Fabled by Marie Claire</a></div>
+            <div><a href="ocado.html" class="f2 f1-l fw1 no-underline white hover-green">Ocado GM Platform</a></div>
+            <span class="w-100 db tc ttu tracked-ultra green f7 pv4" style="letter-spacing: 1em;">SDC</span>
+            <div><a href="about.html" class="f2 f1-l fw1 no-underline white hover-green">About Me</a></div>
+        </div>
+	</div>
+
+	<!-- HEADER -->
+    
+    <header class="cf center relative z-5 pv5 ph2 w-90 w-75-l">
+        <div class="fl w-third tl">
+            <h1 class="f4 fw1 mv5 dn">Stefano Di Crescenzio</h1>
+            <a href="index.html" class="bets-light link black">Back Home</a>
+        </div>
+        <div class="fl w-third tc">
+            <a href="#" class="bets-close bets-hidden"><i class=" material-icons white">close</i></a>
+        </div>
+        <div class="fl w-third tr">
+            <a href="#" class="bets-open bets-light link black">Projects</a>
+        </div>
+    </header>
+
+	<!-- MAIN -->
+    
+    <main>
+        <section class="cf center w-90 w-75-l ph2-l">
+            <img src="img/fabled/fabled01.jpg" alt="" class="">
+            <div class="w-100 w-50-l center tc mv6">
+                <h2 class="f1 fw1 ma0">Fabled by Marie Claire</h2>
+                <h3 class="f3 fw4">Lead UX Designer</h3>
+                <p class="f3 fw1 lh-copy ma0 mb4">Beauty as you know it has changed forever, Fabled by Marie Claire – a unique beauty and wellness destination in collaboration with Ocado – has finally launched and it’s set to become the one-stop-beauty-shop for beauty junkies everywhere.</p>
+                <p class="f3 fw1 lh-copy ma0 mb4">Fables are stories that have withstood the test of time and been passed from generation to generation. Marie Claire has 27 years' experience in telling great beauty stories and we're here to inspire, educate and advise. Selected by our Beauty Experts and curated by Marie Claire, we introduce you to the Marie Claire Edit – your destination for the latest looks, trends, techniques and insider knowledge.</p>
+            </div>
+            <img src="img/fabled/fabled03.jpg" alt="" class="mb6">
+            <img src="img/fabled/fabled02.jpg" alt="" class="mb6">
+            <img src="img/fabled/fabled04.jpg" alt="" class="">
+        </section>
+    </main>
+    
+	<!-- FOOTER -->
+
+    <footer class="center fw1 tc pv5 w-90 w-75-l">&copy; 2019 Stefano Di Crescenzio. All rights reserved.</footer>
+    
+	<!-- SCRIPT -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>    
+    
+    <script>
+    
+	// BETS
+
+    $(".bets-open, .bets-close").click(function(){
+
+        $(".bets").fadeToggle(200);
+        
+        $('body').toggleClass('overflow-hidden');
+        
+        $('.bets-close').toggleClass('bets-hidden');
+
+    });
+
+    </script>
+    
+</body>
+</html>

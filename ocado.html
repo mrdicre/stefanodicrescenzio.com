@@ -12,7 +12,6 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
     
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -29,49 +28,59 @@
 <body>
 
 	<!-- BETS -->
-
+    
 	<div class="bets top-0 w-100 h-100 bg-black o-90 fixed z-4 dn">
-        <div class="w-75 center tc" style="margin-top:159px;">
+        <div class="center tc mt6 w-90 w-75-l">
             <span class="w-100 db tc ttu tracked-ultra green f7 pv4" style="letter-spacing: 1em;">BETS</span>
-            <div><a href="zoom.html" class="f1 fw1 no-underline white hover-green">Ocado Zoom</a></div>
-            <div><a href="ocado.html" class="f1 fw1 no-underline white hover-green">Ocado GM Platform</a></div>
+            <div><a href="zoom.html" class="f2 f1-l fw1 no-underline white hover-green">Ocado Zoom</a></div>
+            <div><a href="fabled.html" class="f2 f1-l fw1 no-underline white hover-green">Fabled by Marie Claire</a></div>
+            <div><a href="ocado.html" class="f2 f1-l fw1 no-underline white hover-green">Ocado GM Platform</a></div>
             <span class="w-100 db tc ttu tracked-ultra green f7 pv4" style="letter-spacing: 1em;">SDC</span>
-            <div><a href="about.html" class="f1 fw1 no-underline white hover-green">About Me</a></div>
+            <div><a href="about.html" class="f2 f1-l fw1 no-underline white hover-green">About Me</a></div>
         </div>
 	</div>
 
 	<!-- HEADER -->
     
-    <header class="cf w-75 center relative z-5 pv5">
+    <header class="cf center relative z-5 pv5 ph2 w-90 w-75-l">
         <div class="fl w-third tl">
             <h1 class="f4 fw1 mv5 dn">Stefano Di Crescenzio</h1>
-            <a href="index.html" class="bets-light no-underline black">Back Home</a>
+            <a href="index.html" class="bets-light link black">Back Home</a>
         </div>
         <div class="fl w-third tc">
             <a href="#" class="bets-close bets-hidden"><i class=" material-icons white">close</i></a>
         </div>
         <div class="fl w-third tr">
-            <a href="#" class="bets-open bets-light no-underline black">Projects</a>
+            <a href="#" class="bets-open bets-light link black">Projects</a>
         </div>
     </header>
 
 	<!-- MAIN -->
     
     <main>
-        <section class="w-75 center">
-            <img src="img/ocado/ocado01.jpg" alt="" class="">
+        <section class="cf center w-90 w-75-l ph2-l">
+            <img id="change-img01" src="img/ocado/dobbies/01.jpg" alt="" class="">
             <div class="w-100 w-50-l center tc mv6">
-                <h2 class="f1 fw1 ma0">GM Platform</h2>
+                <h2 class="f1 fw1 ma0">Ocado GM Platform</h2>
                 <h3 class="f3 fw4">Lead UX Designer</h3>
                 <p class="f3 fw1 lh-copy ma0 mb4">While Ocado has been growing its online grocery business at 15% over the past year (with a 65% year-on-year increase in profit before tax), its general merchandise operation has become the fastest growing part of Ocado.com. It currently represents 7 – 8% of the total business.</p>
-                <p class="f3 fw1 lh-copy ma0 mb4">This webshop offer a personalised customer experience in line with the client business strategy and fully tailored to reflect every kind of brand. At the moment, this platform includes five different websites (Dobbies, Fabled by Marie Claire, Fetch and Sizzle) and is capable to cover a new client every year.</p>                
+                <p class="f3 fw1 lh-copy ma0 mb6">This webshop offer a personalised customer experience in line with the client business strategy and fully tailored to reflect every kind of brand. At the moment, this platform includes five different websites (Dobbies, Fabled by Marie Claire, Fetch and Sizzle) and is capable to cover a new client every year.</p>
+                <img src="img/ocado/brands.svg" alt="" class="">
             </div>
+            <img id="change-img02" src="img/ocado/dobbies/02.jpg" alt="" class="">
+            <div class="center tc mv6">
+                <a class="fabled-btn f5 grow ttu no-underline br-pill dib ph3 pv1 white" style="background:#FFA68A;" href="#">Martini</a>
+                <a class="dobbies-btn f5 grow ttu no-underline br-pill dib ph3 pv1 mh1 white" style="background:#006338;" href="#">Absinthe</a>
+                <a class="fetch-btn f5 grow ttu no-underline br-pill dib ph3 pv1 white" style="background:#7D513C;" href="#">Cognac</a>
+            </div>
+            <img id="change-img03" src="img/ocado/dobbies/03.jpg" alt="" class="mb6">
+            <img id="change-img04" src="img/ocado/dobbies/04.jpg" alt="" class="">
         </section>
     </main>
     
 	<!-- FOOTER -->
 
-    <footer class="w-75 center fw1 tc pv5">&copy; 2019 Stefano Di Crescenzio. All rights reserved.</footer>
+    <footer class="center fw1 tc pv5 w-90 w-75-l">&copy; 2019 Stefano Di Crescenzio. All rights reserved.</footer>
     
 	<!-- SCRIPT -->
 
@@ -86,9 +95,44 @@
 
         $(".bets").fadeToggle(200);
         
-        $('body').toggleClass('overflow-hidden');
+        $("body").toggleClass("overflow-hidden");
+
+        $(".bets-close").toggleClass("bets-hidden");
+
+    });
+
+	// FILTERS
+
+    $(".fetch-btn").on({'click':function(){
         
-        $('.bets-close').toggleClass('bets-hidden');
+        $("#change-img01").fadeOut(300, function(){ $("#change-img01").attr('src','img/ocado/fetch/01.jpg'); }).fadeIn(300);
+        $("#change-img02").fadeOut(300, function(){ $("#change-img02").attr('src','img/ocado/fetch/02.jpg'); }).fadeIn(300);
+        $("#change-img03").fadeOut(300, function(){ $("#change-img03").attr('src','img/ocado/fetch/03.jpg'); }).fadeIn(300);
+        $("#change-img04").fadeOut(300, function(){ $("#change-img04").attr('src','img/ocado/fetch/04.jpg'); }).fadeIn(300); return false;
+        
+        }
+
+    });
+
+    $(".fabled-btn").on({'click':function(){
+        
+        $("#change-img01").fadeOut(300, function(){ $("#change-img01").attr('src','img/ocado/fabled/01.jpg'); }).fadeIn(300);
+        $("#change-img02").fadeOut(300, function(){ $("#change-img02").attr('src','img/ocado/fabled/02.jpg'); }).fadeIn(300);
+        $("#change-img03").fadeOut(300, function(){ $("#change-img03").attr('src','img/ocado/fabled/03.jpg'); }).fadeIn(300);
+        $("#change-img04").fadeOut(300, function(){ $("#change-img04").attr('src','img/ocado/fabled/04.jpg'); }).fadeIn(300); return false;
+        
+        }
+
+    });
+ 
+    $(".dobbies-btn").on({'click':function(){
+        
+        $("#change-img01").fadeOut(300, function(){ $("#change-img01").attr('src','img/ocado/dobbies/01.jpg'); }).fadeIn(300);
+        $("#change-img02").fadeOut(300, function(){ $("#change-img02").attr('src','img/ocado/dobbies/02.jpg'); }).fadeIn(300);
+        $("#change-img03").fadeOut(300, function(){ $("#change-img03").attr('src','img/ocado/dobbies/03.jpg'); }).fadeIn(300);
+        $("#change-img04").fadeOut(300, function(){ $("#change-img04").attr('src','img/ocado/dobbies/04.jpg'); }).fadeIn(300); return false;
+        
+        }
 
     });
 

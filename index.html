@@ -11,8 +11,7 @@
 	<meta name="author" content="Stefano Di Crescenzio">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400">
+
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -22,7 +21,7 @@
         body { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; font: 100%/1.5 'Roboto', Helvetica, Arial, sans-serif; background: #FFFFFF; }
         ::-moz-selection { color: #000000; text-shadow: none; background: #00E676; }
         ::selection { color: #000000; text-shadow: none; background: #00E676; }
-        .bg-album { background: url("img/album01.jpg") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; }
+        .bg-album { background: url("img/cover01.jpg") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; }
         .bg-dark:before { top: 0; left: 0; right: 0; bottom: 0; content: ""; position: absolute; background: rgba(0,0,0,0.5); }
         .shadow-bottom:before { top: 0; left: 0; right: 0; bottom: 0; content: ""; position: absolute; background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.8) 100%); background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(0,0,0,0.8) 100%); }
         .bets-hidden { visibility: hidden; }
@@ -34,20 +33,21 @@
 	<!-- BETS -->
     
 	<div class="bets top-0 w-100 h-100 bg-black o-90 fixed z-4 dn">
-        <div class="w-75 center tc" style="margin-top:159px;">
+        <div class="center tc mt6 w-90 w-75-l">
             <span class="w-100 db tc ttu tracked-ultra green f7 pv4" style="letter-spacing: 1em;">BETS</span>
-            <div><a href="zoom.html" class="f1 fw1 no-underline white hover-green">Ocado Zoom</a></div>
-            <div><a href="ocado.html" class="f1 fw1 no-underline white hover-green">Ocado GM Platform</a></div>
+            <div><a href="zoom.html" class="f2 f1-l fw1 no-underline white hover-green">Ocado Zoom</a></div>
+            <div><a href="fabled.html" class="f2 f1-l fw1 no-underline white hover-green">Fabled by Marie Claire</a></div>
+            <div><a href="ocado.html" class="f2 f1-l fw1 no-underline white hover-green">Ocado GM Platform</a></div>
             <span class="w-100 db tc ttu tracked-ultra green f7 pv4" style="letter-spacing: 1em;">SDC</span>
-            <div><a href="about.html" class="f1 fw1 no-underline white hover-green">About Me</a></div>
+            <div><a href="about.html" class="f2 f1-l fw1 no-underline white hover-green">About Me</a></div>
         </div>
 	</div>
     
 	<!-- HEADER -->
     
-    <header class="cf w-75 center fixed left-0 right-0 z-5 pv5">
+    <header class="cf center fixed left-0 right-0 z-5 pv5 ph2 w-90 w-75-l">
         <div class="fl w-third tl">
-            <a href="about.html" class="bets-open no-underline white"><h1 class="f5 fw4 mv0 white">Stefano Di Crescenzio</h1></a>
+            <a href="about.html" class="bets-open no-underline white"><h1 class="f5 fw4 mv0 white">Stefano <span class="dn dib-l">Di Crescenzio</span></h1></a>
         </div>
         <div class="fl w-third tc">
             <a href="#" class="bets-close bets-hidden"><i class="material-icons white">close</i></a>

@@ -70,14 +70,17 @@
 	<!-- MAIN -->
 
     <main>
-        <section class="cf center w-90 w-75-l ph2-l">
-            <img src="img/cover01.jpg" alt="" class="">
-        </section>
+        <section class="cf center w-90 w-75-l ph2-l"></section>
     </main>
     
 	<!-- FOOTER -->
     
-    <footer></footer>
+    <footer class="cf center absolute right-0 left-0 bottom-0 pv5 ph2 w-90 w-75-l">
+        <div class="fl w-50 tl"><span class="white">&copy; 2019 Stefano Di Crescenzio. All rights reserved.</span></div>
+        <div class="fl w-50 tr">
+            <a href="https://www.linkedin.com/in/mrdicre" target="_blank" class="link black no-underline hover-green">Linkedin</a>
+        </div>
+    </footer>
     
 	<!-- SCRIPT -->
 
@@ -91,6 +94,10 @@
     $(".bets-open, .bets-close").click(function(){
 
         $(".bets").fadeToggle(200);
+        
+        $('body').toggleClass('overflow-hidden');
+        
+        $('.bets-light').toggleClass('white');
         
         $('.bets-close').toggleClass('bets-hidden');
 

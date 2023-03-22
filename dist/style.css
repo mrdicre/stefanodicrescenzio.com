@@ -564,10 +564,6 @@ video {
   height: 100vh;
 }
 
-.w-6\/12 {
-  width: 50%;
-}
-
 .w-7 {
   width: 1.75rem;
 }
@@ -609,10 +605,6 @@ video {
 
 .text-left {
   text-align: left;
-}
-
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .font-montserrat {
@@ -658,10 +650,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:w-6\/12 {
-    width: 50%;
-  }
-
   .lg\:text-8xl {
     font-size: 6rem;
     line-height: 1;

@@ -7,6 +7,9 @@ module.exports = {
         "neon": "#CCFF00",
         "forest": "#163832",
       },
+      fontFamily: {
+        montserrat: "'Montserrat', sans-serif;'",
+      },
     },
   },
   plugins: [],

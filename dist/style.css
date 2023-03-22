@@ -530,6 +530,16 @@ video {
   margin-right: auto;
 }
 
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.my-0\.5 {
+  margin-top: 0.125rem;
+  margin-bottom: 0.125rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -554,6 +564,10 @@ video {
   height: 100vh;
 }
 
+.w-6\/12 {
+  width: 50%;
+}
+
 .w-7 {
   width: 1.75rem;
 }
@@ -562,8 +576,8 @@ video {
   width: 100%;
 }
 
-.max-w-6xl {
-  max-width: 72rem;
+.w-screen {
+  width: 100vw;
 }
 
 .flex-auto {
@@ -597,12 +611,12 @@ video {
   text-align: left;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;';
 }
 
 .text-4xl {
@@ -610,13 +624,21 @@ video {
   line-height: 2.5rem;
 }
 
-.text-8xl {
-  font-size: 6rem;
+.text-6xl {
+  font-size: 3.75rem;
   line-height: 1;
+}
+
+.font-extralight {
+  font-weight: 200;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
 }
 
 .text-neon {
@@ -629,8 +651,19 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 768px) {
+  .md\:w-6\/12 {
+    width: 50%;
+  }
+}
+
 @media (min-width: 1024px) {
-  .lg\:leading-relaxed {
-    line-height: 1.625;
+  .lg\:w-6\/12 {
+    width: 50%;
+  }
+
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 }

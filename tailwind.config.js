@@ -8,7 +8,10 @@ module.exports = {
         "forest": "#163832",
       },
       fontFamily: {
-        montserrat: "'Montserrat', sans-serif;'",
+        inter: "'Inter', sans-serif;'",
+      },
+      dropShadow: {
+        'text': '0 0px 2px rgba(0, 0, 0, 1)',
       },
     },
   },
